@@ -1,0 +1,271 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.sec .tit {
+    margin: 0 auto 30px auto;
+}
+
+.sec .tit h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sec .tit p {
+    font-size: 15px;
+    word-break: keep-all;
+    line-height: 19px;
+}
+
+body {
+    min-height: 150vh;
+
+}
+
+.slick-track,
+.slick-list {
+    transition-delay: 30ms;
+}
+
+.wrap {}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+}
+
+#header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    transition: 0.5s;
+}
+
+#header.on .inner {
+    height: 70px;
+}
+
+
+#header .gnb {
+    margin: 0 0 0 auto;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#header .service {
+    margin: 0 0 0 50px;
+}
+
+/* main */
+
+#video {
+    width: 100%;
+    overflow: hidden;
+    margin: 100px auto 0 auto;
+}
+
+#main_visual .tit {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+#main_visual .tit p {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 200px 0 0 0;
+}
+
+#main_visual .tit h2 {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 20px 0 100px 0;
+}
+
+#main_visual .main_slide .itm {
+    position: relative;
+    height: 800px;
+    padding: 0 0 100px 0;
+}
+
+#main_visual .main_slide .itm01 {
+    background: url(../images/volvomain01.jpg) no-repeat center center/cover;
+}
+
+#main_visual .main_slide .itm02 {
+    background: url(../images/volvomain02.jpg) no-repeat center center/cover;
+}
+
+#main_visual .main_slide .itm03 {
+    background: url(../images/volvomain03.jpg) no-repeat center center/cover;
+}
+
+#main_visual .itm01 .slogan {
+    position: absolute;
+    text-align: left;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#main_visual .itm03 .slogan {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+#main_visual .slogan h2 {
+    margin: 0 0 10px 0;
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px #fff;
+}
+
+#main_visual .slogan p {
+    color: #000;
+    font-size: 15px;
+    text-shadow: 0 0 4px #fff;
+}
+
+/* 슬라이드 */
+#product {
+    position: relative;
+    padding: 150px 0;
+}
+
+#product .tit h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0 0 30px 0;
+}
+
+#product .product_slide figure>p {
+    padding: 10px 0 0 0;
+    color: #333;
+}
+
+#product .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+#product .arrows i {
+    position: absolute;
+    top: 0;
+
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+#product .arrows .left {
+    left: 0;
+}
+
+#product .arrows .right {
+    right: 0;
+}
+
+/* 슬라이드 사진 라인 맞추기, 사이 간격 */
+.product_slide {
+    margin: 0 -15px;
+}
+
+.product_slide figure {
+    padding: 0 15px;
+}
+
+#content {
+    position: relative;
+    padding: 50px 0 0 0;
+}
+
+#content .seet {
+    display: flex;
+}
+
+#content .seet img {
+    height: 600px;
+    object-fit: cover;
+}
+
+#content .seet h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 40px 0 0 50px;
+}
+
+/* #content .seet p {
+    font-size: 20px;
+
+} */
+
+#content .seet02 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+#content .seet02 img {
+    border: 2px solid #fff;
+    border-radius: 20%;
+}
+
+#footer {
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.to_top {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+
+}
+
+.to_top i {
+    background: royalblue;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
