@@ -38,5 +38,9 @@ $(function () {
     $('#product .arrows .right').on('click', function () {
         $('.product_slide').slick('slickNext');
     });
+    // 누르면 위까지 올라가는 거
+    $('.to_top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000)
+    })
 
 })

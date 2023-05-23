@@ -66,6 +66,11 @@ body {
     gap: 40px;
 }
 
+#header .gnb>ul>li:hover {
+    font-weight: 500;
+    color: #1e41a1;
+}
+
 #header .service {
     margin: 0 0 0 50px;
 }
@@ -137,7 +142,7 @@ body {
 
 #main_visual .slogan h2 {
     margin: 0 0 10px 0;
-    color: #000;
+    color: #222;
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
@@ -155,6 +160,11 @@ body {
     position: relative;
     padding: 200px 0 250px 0;
 }
+
+#product .product_slide figure>img {
+    cursor: pointer;
+}
+
 
 #product .tit h2 {
     font-size: 30px;
@@ -179,12 +189,11 @@ body {
 #product .arrows i {
     position: absolute;
     top: 0;
-
     padding: 10px;
     border: 1px solid #000;
     border-radius: 50%;
     font-size: 20px;
-
+    cursor: pointer;
 }
 
 #product .arrows .left {
@@ -224,7 +233,24 @@ body {
 #content .seet h2 {
     font-size: 40px;
     font-weight: 600;
-    padding: 90px 0 0 50px;
+    padding: 90px 0 0 55px;
+}
+
+#content .seet a {
+    position: absolute;
+    top: 20%;
+    right: 250px;
+    border: 1px solid #9b9b9b;
+    border-radius: 3px;
+    font-size: 17px;
+    margin: 0 10px;
+    padding: 15px 20px 13px 20px;
+    transition: 0.3s;
+}
+
+#content .seet a:hover {
+    color: #1e41a1;
+    border: 1px solid #1e41a1;
 }
 
 #content .seet02 {
@@ -265,7 +291,7 @@ body {
 }
 
 #customer .nav>li:hover a {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     color: #1e41a1;
 }
@@ -277,7 +303,7 @@ body {
 #customer .inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px
+    padding: 0 15px 60px 15px;
 }
 
 #customer .list {
@@ -343,33 +369,53 @@ body {
     font-weight: 300;
 }
 
-#customer .noti p {}
+#customer .noti {
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    color: #777;
+    padding: 0 0 50px 0;
+}
+
 
 /* 푸터 */
 #footer {
-    padding: 50px 0;
-    background: #333;
+    padding: 35px 0;
+    background: #666;
     color: #fff;
     text-align: center;
 }
 
+#footer .inner {
+    font-size: 14px;
+    font-weight: 300;
+    color: #dfdfdf;
+}
 
+#footer .inner ul {
+    display: flex;
+    justify-content: center;
+}
 
+#footer .inner ul>li {
+    padding: 0 15px 20px 15px;
+}
 
-
-
-
+#footer .inner ul>li:hover {
+    color: #fff;
+    font-weight: 400;
+}
 
 
 .to_top {
     position: fixed;
-    bottom: 100px;
+    bottom: 130px;
     right: 100px;
 
 }
 
 .to_top i {
-    background: #000;
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     border-radius: 50%;
     font-size: 20px;
