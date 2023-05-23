@@ -153,7 +153,7 @@ body {
 /* 슬라이드 */
 #product {
     position: relative;
-    padding: 150px 0;
+    padding: 200px 0 250px 0;
 }
 
 #product .tit h2 {
@@ -204,9 +204,10 @@ body {
     padding: 0 15px;
 }
 
+/* 내부 */
 #content {
     position: relative;
-    padding: 50px 0 0 0;
+    padding: 0 0 200px 0;
 }
 
 #content .seet {
@@ -214,32 +215,137 @@ body {
 }
 
 #content .seet img {
+    filter: opacity(75%);
     height: 600px;
     object-fit: cover;
+    padding: 0 0 100px 0;
 }
 
 #content .seet h2 {
     font-size: 40px;
     font-weight: 600;
-    padding: 40px 0 0 50px;
+    padding: 90px 0 0 50px;
 }
-
-/* #content .seet p {
-    font-size: 20px;
-
-} */
 
 #content .seet02 {
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 40%;
 }
 
 #content .seet02 img {
-    border: 2px solid #fff;
+    border: 5px solid #fff;
     border-radius: 20%;
 }
 
+
+/* 공지 */
+#customer {
+    padding: 0 0 100px 0;
+}
+
+#customer .nav {
+    display: flex;
+    font-size: 20px;
+    max-width: 1200px;
+    padding: 0 15px;
+    height: 100px;
+    margin: 0 auto 50px auto;
+}
+
+#customer .nav>li {
+    flex: 1;
+}
+
+#customer .nav>li a {
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.3s;
+}
+
+#customer .nav>li:hover a {
+    font-size: 25px;
+    font-weight: 600;
+    color: #1e41a1;
+}
+
+#customer .nav>li~li {
+    border-left: 1px solid #333;
+}
+
+#customer .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+#customer .list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #fff;
+    padding: 0 30px;
+    margin: 0 0 10px 0;
+}
+
+#customer .list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 1px solid #2895fa;
+    border-left: 1px solid #2895fa;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#customer .list:hover::before {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+#customer .list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 1px solid #1e41a1;
+    border-right: 1px solid #1e41a1;
+
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#customer .list:hover::after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+#customer .list h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+#customer .list p {
+    color: #666;
+    font-weight: 300;
+}
+
+#customer .noti p {}
+
+/* 푸터 */
 #footer {
     padding: 50px 0;
     background: #333;
@@ -263,8 +369,9 @@ body {
 }
 
 .to_top i {
-    background: royalblue;
+    background: #000;
     color: #fff;
+    border-radius: 50%;
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
