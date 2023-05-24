@@ -4,6 +4,11 @@
     padding: 0 15px;
 }
 
+p {
+    word-break: keep-all;
+    line-height: 1.4;
+}
+
 .sec {
     padding: 100px 0;
 }
@@ -34,8 +39,7 @@ body {
     transition-delay: 30ms;
 }
 
-.wrap {}
-
+/* 헤더 */
 #header {
     position: fixed;
     top: 0;
@@ -75,12 +79,44 @@ body {
     margin: 0 0 0 50px;
 }
 
-/* main */
+/* 메인 */
 
 #video {
     width: 100%;
     overflow: hidden;
     margin: 100px auto 0 auto;
+    padding: 0 0 200px 0;
+}
+
+#video .ctr {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(0, -50%);
+    padding: 5px 7px 6px 7px;
+
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    outline: hidden;
+    border: hidden;
+}
+
+.ctr::before {
+    content: "\ea3b";
+    font-family: xeicon;
+}
+
+.ctr.on::before {
+    content: "\ea3e";
+    font-family: xeicon;
+}
+
+#main_visual {
+    padding: 0 0 200px 0;
 }
 
 #main_visual .tit {
@@ -94,13 +130,13 @@ body {
 #main_visual .tit p {
     font-size: 30px;
     font-weight: 300;
-    padding: 200px 0 0 0;
 }
 
 #main_visual .tit h2 {
     font-size: 50px;
     font-weight: 700;
-    padding: 20px 0 100px 0;
+    margin: 20px 0 0 0;
+    padding: 0 0 100px 0;
 }
 
 #main_visual .main_slide .itm {
@@ -158,13 +194,12 @@ body {
 /* 슬라이드 */
 #product {
     position: relative;
-    padding: 200px 0 250px 0;
+    padding: 0 0 250px 0;
 }
 
 #product .product_slide figure>img {
     cursor: pointer;
 }
-
 
 #product .tit h2 {
     font-size: 30px;
@@ -179,7 +214,7 @@ body {
 
 #product .arrows {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 1400px;
@@ -216,7 +251,7 @@ body {
 /* 내부 */
 #content {
     position: relative;
-    padding: 0 0 200px 0;
+    padding: 0 0 300px 0;
 }
 
 #content .seet {
@@ -227,19 +262,18 @@ body {
     filter: opacity(75%);
     height: 600px;
     object-fit: cover;
-    padding: 0 0 100px 0;
 }
 
 #content .seet h2 {
     font-size: 40px;
     font-weight: 600;
-    padding: 90px 0 0 55px;
+    margin: 90px 0 0 40px;
 }
 
 #content .seet a {
     position: absolute;
     top: 20%;
-    right: 250px;
+    right: 355px;
     border: 1px solid #9b9b9b;
     border-radius: 3px;
     font-size: 17px;
@@ -256,7 +290,7 @@ body {
 
 #content .seet02 {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 40%;
 }
 
@@ -282,6 +316,7 @@ body {
 
 #customer .nav>li {
     flex: 1;
+
 }
 
 #customer .nav>li a {
@@ -316,6 +351,7 @@ body {
     background: #fff;
     padding: 0 30px;
     margin: 0 0 10px 0;
+    cursor: pointer;
 }
 
 #customer .list::before {

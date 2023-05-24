@@ -1,4 +1,15 @@
 $(function () {
+    let btn = true;
+    $('.ctr').on('click', function () {
+        $(this).toggleClass('on');
+        if (btn) { $('video').trigger('pause'); } else {
+            $('video').trigger('play');
+        }
+        btn = !btn;
+        console.log(btn);
+    });
+
+
     $(window).on('scroll', function () {
         //변수를 만들어 스크롤한 양을 담음.//x
         let sct = $(window).scrollTop();
@@ -21,7 +32,7 @@ $(function () {
         arrows: false,
         dots: false,
         // 슬라이드 사진 n개 넣기//
-        slidesToShow: 3,
+        slidesToShow: 1,
         // 반응형으로 사이트 화면을 줄였을 때 슬라이드 사진 하나만 돌아가기//
         responsive: [
             {
