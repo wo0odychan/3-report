@@ -251,7 +251,7 @@ body {
 /* 내부 */
 #content {
     position: relative;
-    padding: 0 0 300px 0;
+    padding: 0 0 350px 0;
 }
 
 #content .seet {
@@ -298,6 +298,24 @@ body {
     border: 5px solid #fff;
     border-radius: 20%;
 }
+
+#model {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px 300px 15px;
+}
+
+#model .model {
+display: flex;
+align-items: flex-start;
+}
+
+#model .model h2 {
+font-size: 30px;
+font-weight: 600;
+padding: 0 0 0 100px ;
+}
+
 
 
 /* 공지 */
@@ -458,4 +476,9 @@ body {
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.to_top i:hover {
+background: #1e41a1;
 }
