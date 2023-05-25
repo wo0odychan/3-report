@@ -251,7 +251,7 @@ body {
 /* 내부 */
 #content {
     position: relative;
-    padding: 0 0 350px 0;
+    padding: 0 0 300px 0;
 }
 
 #content .seet {
@@ -267,7 +267,15 @@ body {
 #content .seet h2 {
     font-size: 40px;
     font-weight: 600;
-    margin: 90px 0 0 40px;
+    margin: 50px 0 0 30px;
+}
+
+#content .seet strong {
+    position: absolute;
+    top: 120px;
+    right: 365px;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 #content .seet a {
@@ -299,23 +307,51 @@ body {
     border-radius: 20%;
 }
 
+/* 사양 */
 #model {
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 15px 300px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 250px 15px;
 }
 
-#model .model {
-display: flex;
-align-items: flex-start;
+#model .model img {
+    border-radius: 2px;
 }
 
-#model .model h2 {
-font-size: 30px;
-font-weight: 600;
-padding: 0 0 0 100px ;
+#model .right h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 50px 100px;
+    line-height: 45%;
 }
 
+#model .con {
+    display: flex;
+    gap: 30px;
+}
+
+#model .con>* {
+    flex: 1;
+}
+
+#model .right .step {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px 50px;
+    margin: 0 0 0 60px;
+}
+
+#model .right .step>li>strong {
+    font-size: 18px;
+}
+
+#model .right .step>li>p {
+    color: #555;
+    font-weight: 300;
+    margin: 4px 0 2px 0;
+    border-bottom: 1px solid #c4c4c4;
+}
 
 
 /* 공지 */
@@ -480,5 +516,5 @@ padding: 0 0 0 100px ;
 }
 
 .to_top i:hover {
-background: #1e41a1;
+    background: #1e41a1;
 }
