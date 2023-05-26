@@ -221,6 +221,7 @@ body {
     width: 100%;
 }
 
+
 #product .arrows i {
     position: absolute;
     top: 0;
@@ -230,6 +231,7 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+
 
 #product .arrows .left {
     left: 0;

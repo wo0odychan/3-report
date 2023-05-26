@@ -41,6 +41,7 @@ $(function () {
                     slidesToShow: 2,
                 }
             }]
+
     });
     // 슬라이드 화살표//
     $('#product .arrows .left').on('click', function () {
